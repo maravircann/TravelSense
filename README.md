@@ -1,6 +1,6 @@
 # TravelSense — Weather & Destination Guide
 
-**Nume Prenume:** Vîrcan Mara Ștefania 
+**Nume Prenume:** Vîrcan Mara Ștefania \
 **Grupa:** 1147
 
 ## Link video prezentare
@@ -209,8 +209,15 @@ Ambele API-uri sunt publice și gratuite — nu necesită cheie de autentificare
 
 
 ---
+## 5. Capturi de ecran
+<img width="1919" height="603" alt="image" src="https://github.com/user-attachments/assets/fcf2aadc-6f25-418d-a079-4cc8af9f2e93" /> 
+<br/>
+<img width="1899" height="915" alt="image" src="https://github.com/user-attachments/assets/978ba830-970e-4cf4-a663-7a28efc1b2ab" />
 
-## 5. Referințe
+
+---
+
+## 6. Referințe
 
 - Open-Meteo Weather API: https://open-meteo.com/en/docs
 - Open-Meteo Geocoding API: https://open-meteo.com/en/docs/geocoding-api
