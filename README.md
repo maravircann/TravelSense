@@ -210,9 +210,12 @@ Ambele API-uri sunt publice și gratuite — nu necesită cheie de autentificare
 
 ---
 ## 5. Capturi de ecran
-<img width="1919" height="603" alt="image" src="https://github.com/user-attachments/assets/fcf2aadc-6f25-418d-a079-4cc8af9f2e93" /> 
+<img width="1920" height="1353" alt="image" src="https://github.com/user-attachments/assets/9eb6e6a2-cc72-4f58-ac51-0aa2ca3a336b" />
 <br/>
-<img width="1899" height="915" alt="image" src="https://github.com/user-attachments/assets/978ba830-970e-4cf4-a663-7a28efc1b2ab" />
+<img width="1920" height="1274" alt="image" src="https://github.com/user-attachments/assets/25f5aaec-e293-48f0-9903-36bbd1c9caf7" />
+<br/>
+<img width="1920" height="1469" alt="image" src="https://github.com/user-attachments/assets/b86c4a99-cad3-416a-ae27-ae8e31b8cd6e" />
+
 
 
 ---
