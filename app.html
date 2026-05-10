@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TravelSense — Explore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a class="nav-brand" href="index.html">
+      <span class="nav-icon">✈️</span>
+      TravelSense
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="app.html" class="nav-link nav-cta active-cta">Explore</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <h1 class="hero-title">Discover your next <span class="accent">destination</span></h1>
+    <p class="hero-sub">Real-time weather, country facts, and 7-day forecasts for any city worldwide.</p>
+
+    <div class="search-wrap">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="cityInput" placeholder="Search a city… Paris, Tokyo, New York" autocomplete="off" />
+        <button id="searchBtn" onclick="getTravelInfo()">Search</button>
+      </div>
+    </div>
+
+    <div class="chip-row" id="suggestions">
+      <span class="chip-label">Popular:</span>
+      <span class="chip" onclick="searchCity('Paris')">Paris</span>
+      <span class="chip" onclick="searchCity('Tokyo')">Tokyo</span>
+      <span class="chip" onclick="searchCity('New York')">New York</span>
+      <span class="chip" onclick="searchCity('Sydney')">Sydney</span>
+      <span class="chip" onclick="searchCity('Cairo')">Cairo</span>
+    </div>
+  </header>
+
+  <main id="main">
+    <div id="loading" class="loading hidden">
+      <div class="spinner"></div>
+      <p>Fetching destination data…</p>
+    </div>
+    <div id="errorBox" class="error-box hidden"></div>
+    <div id="result" class="result-grid hidden"></div>
+  </main>
+
+  <footer class="footer">
+    <p>Powered by <a href="https://open-meteo.com" target="_blank">Open-Meteo</a> &amp; <a href="https://restcountries.com" target="_blank">REST Countries</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

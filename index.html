@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,44 +10,51 @@
 </head>
 <body>
   <nav class="navbar">
-    <div class="nav-brand">
+    <a class="nav-brand" href="index.html">
       <span class="nav-icon">✈️</span>
       TravelSense
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link nav-link-active">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="app.html" class="nav-link nav-cta">Explore</a>
     </div>
   </nav>
 
-  <header class="hero">
-    <h1 class="hero-title">Discover your next <span class="accent">destination</span></h1>
-    <p class="hero-sub">Real-time weather, country facts, and 7-day forecasts for any city worldwide.</p>
-
-    <div class="search-wrap">
-      <div class="search-box">
-        <span class="search-icon">🔍</span>
-        <input type="text" id="cityInput" placeholder="Search a city… Paris, Tokyo, New York" autocomplete="off" />
-        <button id="searchBtn" onclick="getTravelInfo()">Search</button>
+  <header class="land-hero">
+    <div class="land-hero-inner">
+      <div class="land-badge">Weather · Country Info · Forecasts</div>
+      <h1 class="land-title">Discover your next <span class="accent">destination</span></h1>
+      <p class="land-sub">Real-time weather, country facts and 7-day forecasts for any city worldwide — all in one place.</p>
+      <div class="land-cta">
+        <a href="app.html" class="btn-primary">Start Exploring →</a>
+        <a href="about.html" class="btn-ghost">How it works</a>
       </div>
     </div>
-
-    <div class="chip-row" id="suggestions">
-      <span class="chip-label">Popular:</span>
-      <span class="chip" onclick="searchCity('Paris')">Paris</span>
-      <span class="chip" onclick="searchCity('Tokyo')">Tokyo</span>
-      <span class="chip" onclick="searchCity('New York')">New York</span>
-      <span class="chip" onclick="searchCity('Sydney')">Sydney</span>
-      <span class="chip" onclick="searchCity('Cairo')">Cairo</span>
-    </div>
-
   </header>
 
-  <main id="main">
-    <div id="loading" class="loading hidden">
-      <div class="spinner"></div>
-      <p>Fetching destination data…</p>
+  <section class="features">
+    <div class="features-inner">
+      <div class="feature-card">
+        <div class="feature-icon">🌤️</div>
+        <h3>Live Weather</h3>
+        <p>Temperature, feels like, humidity and wind speed updated in real time for any city.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🌍</div>
+        <h3>Country Info</h3>
+        <p>Capital, population, area, official currency and languages for your destination.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📅</div>
+        <h3>7-Day Forecast</h3>
+        <p>Daily min/max temperatures and weather conditions for the whole week ahead.</p>
+      </div>
     </div>
-    <div id="errorBox" class="error-box hidden"></div>
-    <div id="result" class="result-grid hidden"></div>
-  </main>
+  </section>
 
-  <script src="script.js"></script>
+  <footer class="footer">
+    <p>Powered by <a href="https://open-meteo.com" target="_blank">Open-Meteo</a> &amp; <a href="https://restcountries.com" target="_blank">REST Countries</a></p>
+  </footer>
 </body>
 </html>

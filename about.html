@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — TravelSense</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a class="nav-brand" href="index.html">
+      <span class="nav-icon">✈️</span>
+      TravelSense
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link nav-link-active">About</a>
+      <a href="app.html" class="nav-link nav-cta">Explore</a>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <h1>About <span class="accent">TravelSense</span></h1>
+    <p>A simple web app that brings together weather and country data for any destination worldwide.</p>
+  </header>
+
+  <main class="about-main">
+
+    <section class="about-section">
+      <h2>How it works</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div>
+            <h4>Enter a city</h4>
+            <p>Type any city name in the search bar and press Enter or click Search.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div>
+            <h4>Data is fetched</h4>
+            <p>The app queries two cloud APIs in sequence: Open-Meteo for weather data and REST Countries for country information.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div>
+            <h4>Results are displayed</h4>
+            <p>Current weather, 7-day forecast and detailed country info are shown instantly on screen.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <h2>APIs used</h2>
+      <div class="api-cards">
+        <div class="api-card">
+          <div class="api-header">
+            <span class="api-icon">⛅</span>
+            <div>
+              <h3>Open-Meteo</h3>
+              <span class="api-tag">No API key required</span>
+            </div>
+          </div>
+          <p>Free and open-source weather API. Provides geocoding (city → coordinates), current weather conditions and daily forecasts using WMO weather codes.</p>
+          <a href="https://open-meteo.com" target="_blank" class="api-link">open-meteo.com →</a>
+        </div>
+        <div class="api-card">
+          <div class="api-header">
+            <span class="api-icon">🌍</span>
+            <div>
+              <h3>REST Countries</h3>
+              <span class="api-tag">No API key required</span>
+            </div>
+          </div>
+          <p>Public API with data on every country in the world: name, capital, population, area, currencies, languages and flag images.</p>
+          <a href="https://restcountries.com" target="_blank" class="api-link">restcountries.com →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Powered by <a href="https://open-meteo.com" target="_blank">Open-Meteo</a> &amp; <a href="https://restcountries.com" target="_blank">REST Countries</a></p>
+  </footer>
+</body>
+</html>
