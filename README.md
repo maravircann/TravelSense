@@ -5,7 +5,7 @@
 
 ## Link video prezentare
 
-
+https://youtu.be/3-7ekVXrcxs
 
 ## Link aplicație publicată
 
